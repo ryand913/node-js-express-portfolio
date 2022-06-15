@@ -16,6 +16,6 @@ app.get('/', (req,res) => {
    res.render(data)
 });
 
-app.listen(3001, () => {
+app.listen(3000, () => {
     console.log('app is running on 3000');
 });
