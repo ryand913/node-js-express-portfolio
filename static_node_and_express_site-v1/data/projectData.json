@@ -1,0 +1,101 @@
+{
+    "data": {
+        "title": "Project Portfolio",
+        "info": [
+        {
+            "id": 0,
+            "project_name": "Random Quote Generator",
+            "description": "This app will display a random quote on the click of the button. The app will display a new quote every X seconds if the button is not clicked.",
+            "technologies":
+            [
+                "HTML",
+                "CSS",
+                "Javascript"
+            ],
+            "live_link": "https://ryand913.github.io/Random-Quote-Generator-JSFS/",
+            "github_link": "https://github.com/ryand913/Random-Quote-Generator-JSFS",
+            "image_urls": [
+                "static_node_and_express_site-v1/imgs/proj1.1.png",
+                "static_node_and_express_site-v1/imgs/proj1.2.png"
+                ]
+            },
+            {
+                "id": 1,
+                "project_name": "Paginated Student Directory",
+                "description": "You can use the buttons to toggle between pages of student data",
+                "technologies":
+                [
+                    "HTML",
+                    "CSS",
+                    "Javascript"
+                ],
+                "live_link": "https://ryand913.github.io/Student-Database-Webpage/",
+                "github_link": "https://github.com/ryand913/Student-Database-Webpage",
+                "image_urls": [
+                    "static_node_and_express_site-v1/imgs/proj2.1.png",
+                    "static_node_and_express_site-v1/imgs/proj2.2.png"
+                    ]
+                },
+            {
+                "id": 2,
+                "project_name": "Interactive Form",
+                "description": "This form features several condition entries, validation rules and ADA accessibility.",
+                "technologies":
+                [
+                    "HTML",
+                    "CSS",
+                    "Javascript"
+                ],
+                "live_link": "https://ryand913.github.io/Interactive-Form-RyanD/",
+                "github_link": "https://github.com/ryand913/Interactive-Form-RyanD",
+                "image_urls": [
+                    "static_node_and_express_site-v1/imgs/proj3.1.png",
+                    "static_node_and_express_site-v1/imgs/proj3.2.png",
+                    "static_node_and_express_site-v1/imgs/proj3.3.png",
+                    "static_node_and_express_site-v1/imgs/proj3.4.png"
+                    ]
+                },
+                {
+                    "id": 3,
+                    "project_name": "Phrase Hunter Game",
+                    "description": "This game uses OOP to create a game where a player can guess letters to construct a phrase. The player has 5 wrong guesses before losing the game.",
+                    "technologies":
+                    [
+                        "HTML",
+                        "CSS",
+                        "Javascript",
+                        "OOP"
+                    ],
+                    "live_link": "https://github.com/ryand913/Unit4-Game-App",
+                    "github_link": "https://github.com/ryand913/Unit4-Game-App",
+                    "image_urls": [
+                        "static_node_and_express_site-v1/imgs/proj4.1.png",
+                        "static_node_and_express_site-v1/imgs/proj4.2.png",
+                        "static_node_and_express_site-v1/imgs/proj4.3.png",
+                        "static_node_and_express_site-v1/imgs/proj4.4.png",
+                        "static_node_and_express_site-v1/imgs/proj4.5.png"
+                        ]
+                    },
+                    {
+                        "id": 4,
+                        "project_name": "Employee Directory",
+                        "description": "This app uses APIs to generate random data in an organized directory. You can toggle within the employee directory to find more details about them.",
+                        "technologies":
+                        [
+                            "HTML",
+                            "CSS",
+                            "Javascript",
+                            "XHR",
+                            "APIs"
+                        ],
+                        "live_link": "https://ryand913.github.io/student-directory-api/",
+                        "github_link": "https://github.com/ryand913/student-directory-api",
+                        "image_urls": [
+                            "static_node_and_express_site-v1/imgs/proj5.1.png",
+                            "static_node_and_express_site-v1/imgs/proj5.2.png",
+                            "static_node_and_express_site-v1/imgs/proj5.3.png"
+                            ]
+                        }
+        ]
+    }
+}
