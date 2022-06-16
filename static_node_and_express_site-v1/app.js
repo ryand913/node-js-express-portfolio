@@ -11,11 +11,13 @@ app.get('/', (req, res) => {
     res.send('<h1>Future site of really cool stuff</h1>');
 });
 
-app.get('/', (req,res) => {
-   const data = res.locals.data.projects;
-   res.render(data)
+// app.get('/', (req,res) => {
+//    const data = res.locals.data.projects;
+//    res.render(data)
+// });
+app.get('/about', (req,res) => {
+    res.render('about');
 });
-
 app.listen(3000, () => {
     console.log('app is running on 3000');
 });
