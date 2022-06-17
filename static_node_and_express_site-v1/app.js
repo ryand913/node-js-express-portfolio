@@ -14,7 +14,7 @@ app.use('/static', express.static('public'));
 app.get('/', (req,res) => {
     res.locals = projects;
    res.render('index', projects);
-   console.log(projects[0].img_urls[0]);
+   console.log(projects[0].image_urls[0]);
 
 });
 app.get('/about', (req,res) => {
