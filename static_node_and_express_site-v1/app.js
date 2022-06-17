@@ -1,5 +1,8 @@
 const express = require('express');
-// const data = require("../data/projectData.json");
+const router = express.Router();
+const { data } = require("./data/projectData.json");
+const { projects } = data
+
 
 const app = express();
 
@@ -7,17 +10,21 @@ app.set('view engine', 'pug');
 
 app.use('/static', express.static('public'));
 
-app.get('/', (req, res) => {
-    res.send('<h1>Future site of really cool stuff</h1>');
-});
 
-// app.get('/', (req,res) => {
-//    const data = res.locals.data.projects;
-//    res.render(data)
-// });
+app.get('/', (req,res) => {
+   res.render('index', projects);
+
+});
 app.get('/about', (req,res) => {
     res.render('about');
 });
+
+app.get('/projects/:id', (req,res) => {
+    res.locals.ids = projects.id
+    const { id } = req.params;
+})
 app.listen(3000, () => {
-    console.log('app is running on 3000');
+    console.log('test');
 });
+
+module.exports = router;
