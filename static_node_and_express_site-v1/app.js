@@ -12,7 +12,9 @@ app.use('/static', express.static('public'));
 
 
 app.get('/', (req,res) => {
+    res.locals = projects;
    res.render('index', projects);
+   console.log(projects[0].img_urls[0]);
 
 });
 app.get('/about', (req,res) => {
@@ -20,9 +22,11 @@ app.get('/about', (req,res) => {
 });
 
 app.get('/projects/:id', (req,res) => {
-    res.locals.ids = projects.id
+
     const { id } = req.params;
-})
+
+    res.render('project', { projects, id });
+});
 app.listen(3000, () => {
     console.log('test');
 });
