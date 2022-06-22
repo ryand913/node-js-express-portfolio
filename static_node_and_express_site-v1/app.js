@@ -15,7 +15,6 @@ app.use('/static', express.static('public'));
 
 app.get('/', (req,res) => {
    res.render('index', {projects});
-   console.dir(res.locals)
     // next();
 });
 app.get('/about', (req,res) => {
@@ -23,12 +22,20 @@ app.get('/about', (req,res) => {
     // next();
 });
 
-app.get('/projects/:id', (req,res) => {
+app.get('/projects/:id', (req,res,next) => {
     res.locals.projects = data.projects;
     const { id } = req.params;
-
-    res.render('project', { projects, id });
-    // next();
+    const idInt = parseInt(id);
+    const err = new Error('Not Found!');
+    console.dir(res.locals.projects.length)
+    console.dir(idInt)
+    
+        if (idInt < res.locals.projects.length) {
+            res.render('project', { id });
+        }
+        else
+            err.status = 404;
+            next(err);
 });
 
 
@@ -38,25 +45,26 @@ app.use((req,res,next) => {
     next(err);
   });
 
+//   app.use((err,req,res,next) => {
+//     res.locals.error = err;
+
+//   });
+
 app.use((err,req,res,next) => {
     res.locals.error = err;
-    if (err.status >= 100 && err.status < 600)
-        res.status(err.status);
-    else
+if (err.status === 404)
+    res.render('page-not-found'); 
+ else 
     res.status(500);
   res.render('error');
   });
 
-  app.use((err,req,res,next) => {
-    res.locals.error = err;
-    res.status(404);
-    res.render('error-404');
-  });
 
  
 
   app.listen(3000, () => {
     console.log('test');
+    console.log('heehee!');
 });
 
 //   app.use((err,req,res,next) => {
