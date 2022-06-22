@@ -14,8 +14,8 @@ app.use('/static', express.static('public'));
 
 
 app.get('/', (req,res) => {
-    res.locals = data.projects;
-   res.render('index');
+   res.render('index', {projects});
+   console.dir(res.locals)
     // next();
 });
 app.get('/about', (req,res) => {
@@ -38,8 +38,7 @@ app.use((req,res,next) => {
     next(err);
   });
 
-  
-  app.use((err,req,res,next) => {
+app.use((err,req,res,next) => {
     res.locals.error = err;
     if (err.status >= 100 && err.status < 600)
         res.status(err.status);
@@ -47,6 +46,14 @@ app.use((req,res,next) => {
     res.status(500);
   res.render('error');
   });
+
+  app.use((err,req,res,next) => {
+    res.locals.error = err;
+    res.status(404);
+    res.render('error-404');
+  });
+
+ 
 
   app.listen(3000, () => {
     console.log('test');

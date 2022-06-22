@@ -15,8 +15,8 @@
             "github_link": "https://github.com/ryand913/Random-Quote-Generator-JSFS",
             "image_urls": 
             [
-                "https://randomuser.me/api/portraits/women/25.jpg",
-                "https://randomuser.me/api/portraits/women/25.jpg"
+                "/static/imgs/proj1.1.png",
+                "/static/imgs/proj1.2.png"
             ]
         },
             {
@@ -29,11 +29,11 @@
                     "CSS",
                     "Javascript"
                 ],
-                "live_link": "'https://ryand913.github.io/Student-Database-Webpage/'",
-                "github_link": "'https://github.com/ryand913/Student-Database-Webpage'",
+                "live_link": "https://ryand913.github.io/Student-Database-Webpage/",
+                "github_link": "https://github.com/ryand913/Student-Database-Webpage",
                 "image_urls": [
-                    "/node-js-express-portfolio/static_node_and_express_site-v1/views/imgs/proj2.1.png",
-                    "static_node_and_express_site-v1/imgs/proj2.2.png"
+                    "/static/imgs/proj2.1.png",
+                    "/static/imgs/proj2.2.png"
                     ]
                 },
             {
@@ -49,10 +49,10 @@
                 "live_link": "https://ryand913.github.io/Interactive-Form-RyanD/",
                 "github_link": "https://github.com/ryand913/Interactive-Form-RyanD",
                 "image_urls": [
-                    "static_node_and_express_site-v1/imgs/proj3.1.png",
-                    "static_node_and_express_site-v1/imgs/proj3.2.png",
-                    "static_node_and_express_site-v1/imgs/proj3.3.png",
-                    "static_node_and_express_site-v1/imgs/proj3.4.png"
+                    "/static/imgs/proj3.1.png",
+                    "/static/imgs/proj3.2.png",
+                    "/static/imgs/proj3.3.png",
+                    "/static/imgs/proj3.4.png"
                     ]
                 },
                 {
@@ -69,11 +69,11 @@
                     "live_link": "https://github.com/ryand913/Unit4-Game-App",
                     "github_link": "https://github.com/ryand913/Unit4-Game-App",
                     "image_urls": [
-                        "static_node_and_express_site-v1/imgs/proj4.1.png",
-                        "static_node_and_express_site-v1/imgs/proj4.2.png",
-                        "static_node_and_express_site-v1/imgs/proj4.3.png",
-                        "static_node_and_express_site-v1/imgs/proj4.4.png",
-                        "static_node_and_express_site-v1/imgs/proj4.5.png"
+                        "/static/imgs/proj4.1.png",
+                        "/static/imgs/proj4.2.png",
+                        "/static/imgs/proj4.3.png",
+                        "/static/imgs/proj4.4.png",
+                        "/static/imgs/proj4.5.png"
                         ]
                     },
                     {
@@ -91,9 +91,9 @@
                         "live_link": "https://ryand913.github.io/student-directory-api/",
                         "github_link": "https://github.com/ryand913/student-directory-api",
                         "image_urls": [
-                            "static_node_and_express_site-v1/imgs/proj5.1.png",
-                            "static_node_and_express_site-v1/imgs/proj5.2.png",
-                            "static_node_and_express_site-v1/imgs/proj5.3.png"
+                            "/static/imgs/proj5.1.png",
+                            "/static/imgs/proj5.2.png",
+                            "/static/imgs/proj5.3.png"
                             ]
                         }
         ]

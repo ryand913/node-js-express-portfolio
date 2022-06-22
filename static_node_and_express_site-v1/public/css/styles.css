@@ -20,9 +20,9 @@ body {
   font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   font-weight: normal;
   line-height: 1.5;
-  color: #0a0a0a;
-  background: #fefefe;
-  background: #000;
+  color: #0000f7;
+  background: #e600ff8e;
+  background: rgba(16, 247, 43, 0.226);
   transform: translateX(0px);
   transition: all 0.4s ease-out;
 }
@@ -176,7 +176,7 @@ nav a span {
   font-size: 13px;
   letter-spacing: 2.5px;
   text-transform: uppercase;
-  color: #555;
+  color: rgb(226, 161, 233);
 }
 
 .header {
@@ -184,8 +184,8 @@ nav a span {
   color: #fefefe;
   height: 40px;
   padding: 0.5rem;
-  background: #0a0a0a;
-  border-left: 1px solid #0a0a0a;
+  background: #794ec4;
+  border-left: 1px solid #ab72e7;
 }
 
 .header span {
@@ -229,7 +229,7 @@ nav a span {
 
 .portfolio-intro h1 {
   font-size: 1.5rem;
-  color: #0a0a0a;
+  color: #8811bb;
   margin: 0 auto 8px;
 }
 

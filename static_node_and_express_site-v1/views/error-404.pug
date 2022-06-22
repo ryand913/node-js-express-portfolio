@@ -3,6 +3,7 @@ extends layout
 block content
   h1= error.message
   h2= error.status
+    p We are sorry, you have entered an invalid URL. Please update your URL and attempt your search again!
   pre= error.stack  
 
   a.btn-link(href='/') Home Page
