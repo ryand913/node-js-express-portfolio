@@ -26,17 +26,16 @@ app.get('/projects/:id', (req,res,next) => {
     res.locals.projects = data.projects;
     const { id } = req.params;
     const idInt = parseInt(id);
-    const err = new Error('Not Found!');  
         if (idInt < res.locals.projects.length) {
             res.render('project', { id });
         }
         else
-            err.status = 404;
-            next(err);
+            next();
 });
 
 
 app.use((req,res,next) => {
+    console.dir('tesitng');
     const err = new Error('Not Found');
     err.status = 404;
     next(err);

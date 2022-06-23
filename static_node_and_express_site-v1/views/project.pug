@@ -23,10 +23,8 @@ block content
         h6 Technologies
         ul
 
-
-          li HTML
-          li CSS
-          li JavaScript
+          each tech,index in projects[id].technologies
+            li  #{tech}
 
         a.btn-link(href=`${projects[id].live_link}`) Live Demo
         a.btn-link(href=`${projects[id].github_link}`) GitHub Repo
