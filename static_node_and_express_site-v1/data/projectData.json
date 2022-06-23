@@ -21,7 +21,7 @@
         },
             {
                 "id": 1,
-                "project_name": "Paginated Student Directory",
+                "project_name": "Paginated Directory",
                 "description": "You can use the buttons to toggle between pages of student data",
                 "technologies":
                 [
@@ -78,7 +78,7 @@
                     },
                     {
                         "id": 4,
-                        "project_name": "Employee Directory",
+                        "project_name": "API Directory",
                         "description": "This app uses APIs to generate random data in an organized directory. You can toggle within the employee directory to find more details about them.",
                         "technologies":
                         [

@@ -50,9 +50,12 @@ app.use((req,res,next) => {
 
 //   });
 
+
 app.use((err,req,res,next) => {
     res.locals.error = err;
-if (err.status === 404)
+    // if (err.status !== 404 && err.status >= 100 && err.status < 600)
+    //     res.status(err.status);
+   if (err.status === 404)
     res.render('page-not-found'); 
  else 
     res.status(500);
