@@ -26,10 +26,7 @@ app.get('/projects/:id', (req,res,next) => {
     res.locals.projects = data.projects;
     const { id } = req.params;
     const idInt = parseInt(id);
-    const err = new Error('Not Found!');
-    console.dir(res.locals.projects.length)
-    console.dir(idInt)
-    
+    const err = new Error('Not Found!');  
         if (idInt < res.locals.projects.length) {
             res.render('project', { id });
         }
@@ -45,21 +42,15 @@ app.use((req,res,next) => {
     next(err);
   });
 
-//   app.use((err,req,res,next) => {
-//     res.locals.error = err;
-
-//   });
 
 
 app.use((err,req,res,next) => {
     res.locals.error = err;
-    // if (err.status !== 404 && err.status >= 100 && err.status < 600)
-    //     res.status(err.status);
-   if (err.status === 404)
-    res.render('page-not-found'); 
- else 
-    res.status(500);
-  res.render('error');
+    if (err.status === 404)
+    res.render('page-not-found');
+    else
+    res.status(500).render('error');
+    console.dir(err.status + " " + err.message);
   });
 
 
@@ -67,7 +58,6 @@ app.use((err,req,res,next) => {
 
   app.listen(3000, () => {
     console.log('test');
-    console.log('heehee!');
 });
 
 //   app.use((err,req,res,next) => {
